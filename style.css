@@ -24,17 +24,18 @@ header{
 }
 .midja{
     background: lightgreen;
-    grid-area: midja;
+    grid-area: "midja";
 }
 .hæg{
     background:crimson;
-    grid-area: hæg;
+    grid-area: "hæg";
 }
 .vin{
     background:honeydew;
-    grid-area: vins;
+    grid-area: "vins";
 }
 .main{
+    display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
     "vins midja hæg"
