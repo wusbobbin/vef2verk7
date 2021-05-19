@@ -6,14 +6,13 @@ body{
     margin: 0 auto;
 }
 .marine{
-    display:block;
     width:20em;
     padding:20px;
-    margin-left:auto;
-    margin-right:auto;
     animation-name:birting;
     animation-duration:5s;
     grid-area: logo;
+    text-align: center;
+    margin: 0 auto;
 }
 
 @keyframes birting{
