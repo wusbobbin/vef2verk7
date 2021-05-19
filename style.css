@@ -5,9 +5,6 @@ body{
     background:#E0C9A6;
     margin: 0 auto;
 }
-header{
-    background:white;
-}
 .marine{
     display:block;
     width:20em;
@@ -15,7 +12,8 @@ header{
     margin-left:auto;
     margin-right:auto;
     animation-name:birting;
-    animation-duration:2s;
+    animation-duration:5s;
+    grid-area: logo;
 }
 
 @keyframes birting{
@@ -24,25 +22,34 @@ header{
 }
 .midja{
     background: lightgreen;
-    grid-area: "midja";
+    grid-area: midja;
 }
 .hæg{
     background:crimson;
-    grid-area: "hæg";
+    grid-area: hæg;
 }
 .vin{
     background:honeydew;
-    grid-area: "vins";
+    grid-area: vins;
 }
 .main{
     display: grid;
-    margin:20px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
+    "logo logo logo"
     "vins midja hæg"
-    ;
+    "footer footer footer";
     display: grid;
 }
 h3{
     text-align: center;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: darkorange;
 }
